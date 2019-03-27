@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{{ title }}
+<ul class="collection">
+    {% for post in posts %}
+    <li class="collection-item">
+        {{post.title}}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
